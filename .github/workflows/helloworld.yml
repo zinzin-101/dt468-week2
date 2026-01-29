@@ -1,0 +1,17 @@
+name: hello world
+on:
+  push:
+    branches: ["main"]
+jobs:
+  hello1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hello
+        run: echo "hello"
+      - name: print world
+        run: echo "world"
+  hello_world:
+    runs-on: ubuntu-latest
+    steps:
+        - name: print helloworld
+          run: echo "hello world"
