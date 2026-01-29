@@ -1,11 +1,9 @@
 name: build binary
 on:
-  push:
-    branches: ["main"]
   workflow_dispatch:
 jobs:
   build:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v4
@@ -36,3 +34,4 @@ jobs:
           name: submission
           path: submission.zip      
         
+
